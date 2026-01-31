@@ -26,8 +26,10 @@ if  (studentID[0:3]=="CSE" and
                         referralcode[-1]=="@"):
                                 print("APPROVED")
                 else: print("REJECTED")
+          else: print("REJECTED")              
     else:print("REJECTED")
 else:print("REJECTED")
+
 
 
 
