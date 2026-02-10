@@ -101,3 +101,70 @@ This program is created to practice:
 - Input validation
 - Logical operators in Python
 
+# 3.Student Performance Analyzer
+## Description
+
+A Python program to analyze student internal assessment marks using basic programming concepts.
+Each mark is processed individually to classify student performance and generate a final summary.
+
+## Concepts Used
+
+- List
+- for loop
+- Conditional statements
+- String output
+
+## Classification Rules
+
+- 90–100 → Excellent
+- 75–89 → Very Good
+- 60–74 → Good
+- 40–59 → Average
+- 0–39 → Fai
+- <0 or >100 → Invalid
+
+## Personalization Logic
+
+- Based on Register Number last digit
+- Even digit → marks increased
+- Odd digit → marks decreased
+- Applied before classification to ensure unique logic
+
+## Constraints Followed
+
+- for loop only
+- list used
+- no max(), min(), sum()
+- no dictionary or set
+- no try-except
+## Sample Testcase:
+## output:
+Enter total number of students: 5
+
+Enter marks of the student 1: 95
+
+Enter marks of the student 2: 82
+
+Enter marks of the student 3: 67
+
+Enter marks of the student 4: 45
+
+Enter marks of the student 5: 30
+
+Enter your registration numbers last digit: 4
+
+marks after updation: [97, 84, 69, 47, 32]
+
+ 97-Excellent
+
+ 84-Very Good
+ 
+ 69-Good
+ 
+ 47-Average
+ 
+ 32-Fail
+ 
+ Total Valid students: 5
+ 
+ Total Failed students: 1
