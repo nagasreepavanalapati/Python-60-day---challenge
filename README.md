@@ -168,3 +168,74 @@ marks after updation: [97, 84, 69, 47, 32]
  Total Valid students: 5
  
  Total Failed students: 1
+
+# Cyber Activity Risk Analyzer
+
+This project is a Python program developed to analyze student login activity intensity scores and detect suspicious behavior.
+
+The program processes a list of integer activity scores, categorizes them into risk levels, and applies a personalized security filter based on the last digit of the register number.
+
+## Project Objective
+- The main objectives of this project are:
+- Clean invalid data
+- Categorize activity scores into risk levels
+- Apply a personalized filtering rule
+- Generate a final security report
+
+Each student’s output is different because it depends on the last digit of their register number.
+
+## Risk Categorization Rules
+  For each activity score:
+- If score is less than 0 → Ignored (Invalid Data)
+- 0 to 30 → Low Risk
+- 31 to 60 → Medium Risk
+- 61 to 100 → High Risk
+- Greater than 100 → Critical Risk
+
+## The program creates four separate lists:
+- low_risk
+- medium_risk
+- high_risk
+- critical_risk
+
+## Personalized Security Filter
+- Let D be the last digit of my register number.
+- If D is even, all Low Risk scores are removed after categorization.
+- If D is odd, all Critical Risk scores are removed after categorization.
+This makes each student’s implementation unique.
+
+## Additional Features
+- Counts total valid entries
+- Counts ignored entries
+- Counts entries removed due to personalization
+- Displays final categorized lists after filtering
+
+## Concepts Used
+- Lists
+- For loop
+- Conditional statements
+- Basic data validation
+## sample testcase output:
+Enter the total number of scores:8
+- enter the score of 1:10
+- enter the score of 2:45
+- enter the score of 3:78
+- enter the score of 4:120
+- enter the score of 5:-5
+- enter the score of 6:30
+- enter the score of 7:99
+- enter the score of 8:150
+- Register Digit(D): 7
+- Low Risk: [10, 30]
+- Medium Risk: [45]
+- High Risk: [78, 99]
+- Critical Risk: [120, 150]
+- After personalized Filtering:
+- Low Risk: [10, 30]
+- Medium Risk: [45]
+- High Risk: [78, 99]
+- Critical Risk: []
+- Total valid entries: 7
+- Ignored Entries: 1
+- Removed Due to Personalization: 2
+
