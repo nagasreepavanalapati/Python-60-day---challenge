@@ -169,7 +169,7 @@ marks after updation: [97, 84, 69, 47, 32]
  
  Total Failed students: 1
 
-# Cyber Activity Risk Analyzer
+# 5.Cyber Activity Risk Analyzer
 
 This project is a Python program developed to analyze student login activity intensity scores and detect suspicious behavior.
 
@@ -238,4 +238,57 @@ Enter the total number of scores:8
 - Total valid entries: 7
 - Ignored Entries: 1
 - Removed Due to Personalization: 2
+
+  # 5.Disaster Resource Dispatch Analyzer
+## problem statement
+This project analyzes emergency resource requests during a disaster drill.
+Each zone submits an integer value representing required resources.
+The program categorizes requests and applies personalized filtering using PLI.
+
+## Classification Rules
+
+- < 0 → Invalid Request
+- 0 → No Demand
+- 1–20 → Low Demand
+- 21–50 → Moderate Demand
+- 50 → High Demand
+
+## Personalization Logic (PLI)
+
+Full Name: Naga Sree Pavan Alapati
+
+L = Length of full name (excluding spaces)
+L = 20
+
+PLI = L % 3
+PLI = 20 % 3 = 2
+
+Applied Rule: Rule C
+Only Moderate Demand requests are kept.
+Low and High demands are removed.
+
+## Input Used
+
+reports = [112, 34, 56, 76, -67, 95, 88, 45]
+
+Output Summary
+
+Low Demand: []
+Moderate Demand: [34, 45]
+High Demand: []
+Invalid Reports: [-67]
+
+Total Valid Reports: 7
+Removed Due To PLI: 5
+
+## Constraints Followed
+
+- Used list
+- Used for loop
+- Used conditional statements
+- No list comprehension
+- No dictionaries or sets
+- No built-in functions like max(), min(), sum()
+- No sorting
+- Output varies based on student name
 
