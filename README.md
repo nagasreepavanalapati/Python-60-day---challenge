@@ -292,3 +292,81 @@ Removed Due To PLI: 5
 - No sorting
 - Output varies based on student name
 
+# Smart Transaction Risk Detector
+## Introduction
+
+This project is designed to analyze daily transaction data and identify potential risk in user spending behavior. It helps in detecting unusual or suspicious transactions using simple rules.
+
+## Objective
+
+The main objective is to classify transactions and determine the overall risk level based on predefined conditions and patterns.
+
+## Input
+
+The program takes:
+
+A list of transaction amounts
+
+Last digit of register number (for personalization)
+
+## Transaction Categories
+
+Each transaction is classified into one of the following:
+
+Invalid Transaction (t ≤ 0)
+
+Normal Transaction (1–500)
+
+Large Transaction (501–2000)
+
+High Risk Transaction (>2000)
+
+### Data Structures Used
+
+List to store transaction amounts
+
+Dictionary to store categorized transactions
+
+Tuple to store summary (total, count)
+
+### Logic Implementation
+
+A loop is used to go through each transaction and classify it using conditional statements. List comprehension is used to filter valid transactions.
+
+### Pattern Detection
+
+The following patterns are checked:
+
+Frequent Transactions (more than 5)
+
+Large Spending (total > 5000)
+
+Suspicious Pattern (3 or more high-risk transactions)
+
+### Personalized Logic
+
+Based on the last digit of the register number, thresholds for frequency and spending are slightly adjusted to make the system adaptive.
+
+## Output
+
+The program displays:
+
+Categorized transactions
+
+Total transaction value
+
+Number of transactions
+
+Final risk classification
+
+Risk Levels
+
+Low Risk
+
+Moderate Risk
+
+High Risk
+
+### Learning Outcome
+
+This project helps in understanding basic programming concepts and applying them to a real-world problem. It improves skills in data handling, classification, and logical decision-making.
