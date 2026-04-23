@@ -169,7 +169,7 @@ marks after updation: [97, 84, 69, 47, 32]
  
  Total Failed students: 1
 
-# 5.Cyber Activity Risk Analyzer
+# 4.Cyber Activity Risk Analyzer
 
 This project is a Python program developed to analyze student login activity intensity scores and detect suspicious behavior.
 
@@ -292,7 +292,7 @@ Removed Due To PLI: 5
 - No sorting
 - Output varies based on student name
 
-# Smart Transaction Risk Detector
+# 6.Smart Transaction Risk Detector
 ## Introduction
 
 This project is designed to analyze daily transaction data and identify potential risk in user spending behavior. It helps in detecting unusual or suspicious transactions using simple rules.
@@ -370,3 +370,85 @@ High Risk
 ### Learning Outcome
 
 This project helps in understanding basic programming concepts and applying them to a real-world problem. It improves skills in data handling, classification, and logical decision-making.
+
+
+#  Multi-Dimensional Academic Intelligence System
+
+##  Overview
+This project analyzes student performance using marks, attendance, and assignment scores. It applies structured data handling and statistical techniques to generate meaningful academic insights.
+
+##  Features
+- Random generation of student data
+- Storage using lists, tuples, dictionary
+- Conversion into Pandas DataFrame
+- Performance Index calculation:
+  performance_index = (0.7 * marks + 0.3 * assignment) * log(attendance + 1)
+- Student classification:
+  - At Risk
+  - Average
+  - Good
+  - Top Performer
+- Statistical analysis:
+  - Mean (manual calculation)
+  - Median
+  - Standard Deviation
+  - Correlation (marks vs attendance)
+- Min-Max normalization
+- Pattern detection:
+  - Consistency check
+  - Attendance risk
+  - High achievement
+- Final system insight generation
+
+##  Technologies Used
+- Python
+- NumPy
+- Pandas
+- random module
+- math module
+
+##  Data Structure
+Each student record contains:
+- student_id
+- marks (0–100)
+- attendance (0–100)
+- assignment (0–50)
+
+##  How to Run
+1. Install libraries:
+   pip install numpy pandas
+
+2. Run the program:
+   python filename.py
+
+3. Enter input:
+   Last digit of your roll number (number of students)
+
+##  Output
+- DataFrame table
+- Categorized dictionary
+- Mean, Median, Standard Deviation
+- Correlation value
+- Tuple (mean, std_dev, max_marks)
+- Final Insight:
+  - Stable Academic System
+  - Moderate Performance
+  - Critical Attention Required
+
+##  Personalization
+Last digit of register number is used as input ‘n’ to determine dataset size.  
+This ensures variation in data while keeping logic consistent.
+
+##  Learning Outcome
+- Learned data handling using Pandas
+- Applied NumPy for statistical analysis
+- Implemented classification and normalization
+- Understood correlation and pattern detection
+- Generated insights from multi-dimensional data
+
+##  Note
+- Output varies due to random data generation
+- Python 3.14 may require compatible library versions
+
+##  Author
+Naga Sree Pavan Alapati
