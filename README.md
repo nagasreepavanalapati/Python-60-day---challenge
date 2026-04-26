@@ -372,7 +372,7 @@ High Risk
 This project helps in understanding basic programming concepts and applying them to a real-world problem. It improves skills in data handling, classification, and logical decision-making.
 
 
-#  Multi-Dimensional Academic Intelligence System
+# 8.Multi-Dimensional Academic Intelligence System
 
 ##  Overview
 This project analyzes student performance using marks, attendance, and assignment scores. It applies structured data handling and statistical techniques to generate meaningful academic insights.
@@ -452,3 +452,222 @@ This ensures variation in data while keeping logic consistent.
 
 ##  Author
 Naga Sree Pavan Alapati
+
+
+# 9. Smart Inventory Mutation Tracker
+
+## Problem Overview
+- This program analyzes how inventory data behaves when copied and modified.
+- It focuses on shallow copy and deep copy behavior.
+- It detects unintended changes in original data due to improper copying.
+- It helps understand nested data mutation.
+
+## Objective
+- Create inventory using nested dictionaries  
+- Apply changes based on roll number logic  
+- Perform shallow copy and deep copy  
+- Modify copied data selectively  
+- Compare original and modified data  
+- Identify changed and unchanged items  
+- Return summary using tuples  
+
+## How the Program Works
+- The program creates an inventory list.
+- Each item contains:
+  - price  
+  - stock  
+  - supplier rating  
+- Two copies are created:
+  - shallow copy  
+  - deep copy  
+- A specific item is selected using:
+  - index = roll_number % length_of_inventory  
+- Selected item is modified:
+  - price reduced by 10%  
+  - stock increased by 5  
+- Results are compared with original data.
+
+## Mutation Logic
+```
+index = roll_number % len(inventory)
+price = price * 0.9
+stock = stock + 5
+```
+
+## Copy Behavior
+### Shallow Copy
+- Shares nested objects  
+- Changes affect original data  
+
+### Deep Copy
+- Fully independent copy  
+- Changes do not affect original  
+
+## Analysis Performed
+- Compared original vs shallow copy  
+- Compared original vs deep copy  
+- Identified:
+  - changed items  
+  - unchanged items  
+
+## Output
+- Original inventory  
+- Shallow copy result  
+- Deep copy result  
+- Changed items  
+- Unchanged items  
+- Tuple summary:
+  - (changed_count, unchanged_count)  
+
+## Personalization Applied
+- Roll Number: 24110011606  
+- Logic applied using:
+  index = roll_number % number_of_items  
+
+## My Approach / Logic Decisions
+- Used modular functions:
+  - create_inventory()  
+  - update_items()  
+  - check_diff()  
+- Used nested dictionaries  
+- Used conditional logic for mutation  
+- Compared data using loops  
+
+## Concepts Used
+- Lists  
+- Dictionaries  
+- Nested structures  
+- Shallow copy  
+- Deep copy  
+- Functions  
+- Loops  
+- Tuple  
+
+## Reflection
+- Learned difference between shallow and deep copy  
+- Understood mutation in nested data  
+- Practiced comparing complex structures  
+- Improved logical thinking  
+
+
+# 10.Academic Data Drift & Copy Behavior Analyzer
+
+## Problem Overview
+- This program analyzes how student data changes when copied and modified.
+- It focuses on detecting data drift.
+- It compares shallow copy and deep copy behavior.
+- It uses statistical analysis to evaluate changes.
+
+## Objective
+- Generate student data using random values  
+- Store data using list of dictionaries  
+- Perform shallow copy and deep copy  
+- Apply mutation based on roll number logic  
+- Analyze data using NumPy and manual calculation  
+- Detect data drift  
+- Classify system behavior  
+- Return summary using tuple  
+
+## How the Program Works
+- The program generates n student records.
+- Each student contains:
+  - marks  
+  - attendance  
+  - scores (list)  
+- Data is copied using:
+  - shallow copy  
+  - deep copy  
+- Mutation is applied:
+  - marks increased using square root  
+  - attendance decreased  
+  - scores updated  
+- Data is converted into DataFrame using Pandas.
+- Statistical analysis is performed.
+
+## Mutation Logic
+```
+r = roll_number % 3
+if r == 0:
+    r = 1
+
+if index % r == 0:
+    marks = marks + sqrt(marks)
+    attendance = attendance - 5
+    scores[0] = scores[0] + 2
+```
+
+## Copy Behavior
+### Shallow Copy
+- Shares nested data  
+- Changes affect original data  
+
+### Deep Copy
+- Fully independent  
+- Changes do not affect original  
+
+## Analysis Performed
+- Mean (NumPy)  
+- Standard Deviation (NumPy)  
+- Manual Mean Calculation  
+- Data Drift Calculation:
+```
+drift = abs(mean(original_marks) - mean(modified_marks))
+```
+
+## Normalization
+```
+normalized_marks = (marks - min) / (max - min)
+```
+
+## Classification Logic
+- Copy Failure Detected  
+  - if original data is modified due to shallow copy  
+- Stable Data  
+  - if drift < threshold  
+- Minor Drift  
+  - if drift < 2 × threshold  
+- Critical Drift  
+  - otherwise  
+
+## Output
+- Original DataFrame  
+- Shallow Copy DataFrame  
+- Deep Copy DataFrame  
+- Drift Value  
+- Tuple:
+  - (mean, drift, std_dev)  
+- Final Classification  
+
+## Personalization Applied
+- Roll Number: 24110011606  
+- Logic applied using:
+  r = roll_number % 3  
+
+## My Approach / Logic Decisions
+- Used modular functions:
+  - create()  
+  - change()  
+  - stats()  
+  - result_check()  
+- Used random data for simulation  
+- Applied mathematical transformation  
+- Compared original and modified datasets  
+
+## Concepts Used
+- Lists  
+- Dictionaries  
+- Nested structures  
+- Shallow copy  
+- Deep copy  
+- NumPy  
+- Pandas  
+- Functions  
+- Mathematical operations  
+- Data analysis  
+
+## Reflection
+- Learned data drift concept  
+- Understood shallow vs deep copy clearly  
+- Practiced statistical analysis using NumPy  
+- Improved understanding of data mutation  
+
